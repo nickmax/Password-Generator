@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #Imports the 'random' Builtin Module
 import random
 import pyperclip
