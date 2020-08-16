@@ -21,7 +21,7 @@
   
     $ cd
     
-    $ echo "source ~/Passwor-Generator/generator.sh">>.bashrc
+    $ echo "source ~/Password-Generator/generator.sh">>.bashrc
     
     $ exit 
     
