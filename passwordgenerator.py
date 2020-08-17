@@ -38,20 +38,21 @@ def banner():
     
     
 def generate():
-    
-    passwordlength = int(input(cyan+"Please input Password Length >>"+reset))
-    x =choice(characters)
-    password = x
-    for f in range(passwordlength-1):
-        password += choice(characters)        
-    for i in tqdm(range(100)):
-            time.sleep(0.01)
-    print(green +"PassWord Generated Successfully!"+reset)
-    print()
-    print(">>   " + password)
-    pyperclip.copy(password)
-    print(yellow+"PassWord copied succesfully "+reset)
-
+    try:
+        passwordlength = int(input(cyan+"Please input Password Length >>"+reset))
+        x =choice(characters)
+        password = x
+        for f in range(passwordlength-1):
+            password += choice(characters)        
+        for i in tqdm(range(100)):
+                time.sleep(0.01)
+        print(green +"PassWord Generated Successfully!"+reset)
+        print()
+        print(">>   " + password)
+        pyperclip.copy(password)
+        print(yellow+"PassWord copied succesfully "+reset)
+    except:
+        print("An error occured please try again")
 
 banner()
 generate()
