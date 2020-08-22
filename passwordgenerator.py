@@ -16,10 +16,9 @@ random= choice(characters)
 
 red = fg("red")
 green = fg('green')
-blue = fg('blue')
 yellow = fg('yellow')
 reset = attr("reset")
-cyan = fg("cyan")
+blue = fg("cyan")
 
 
 
@@ -39,7 +38,7 @@ def banner():
     
 def generate():
     try:
-        passwordlength = int(input(cyan+"Please input Password Length >>"+reset))
+        passwordlength = int(input(blue+"Please input Password Length >>"+reset))
         x =choice(characters)
         password = x
         for f in range(passwordlength-1):
